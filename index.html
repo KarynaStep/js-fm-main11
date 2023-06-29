@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,1000;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Притулок для тварин</h1>
+    </header>
+
+    <main>
+        <form class="form">
+            <h2>Заповніть форму, якщо хочете взяти тварину</h2>
+            <fieldset>
+                <legend> Особисті дані</legend>
+                <label>
+                    Ім'я
+                    <input type="text" name="user-name">
+                </label>
+
+                <label>Електронна пошта
+                    <input type="text" name="email"> </label>
+
+                <label>
+                    Дата народження:
+                    <input type="date" name="date-of-birth" placeholder="14.09.2005">
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Стать</legend>
+                <div><input class="input-inlite" type="radio" value="Чоловік" name="gender"> Чоловік</div>
+                <div><input class="input-inlite" type="radio" value="Жінка" name="gender"> Жінка</div>
+                <div><input class="input-inlite" type="radio" value="Інше" name="gender"> Інше</div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Додаткові налаштування</legend>
+                <input type="checkbox" name="розсилка"> Підписатися на розсилку
+            </fieldset>
+
+            <fieldset>
+                <legend>Оберіть категорію своїх інтересів</legend>
+                <select name="інтереси">
+                    <optgroup label="Технології">
+                        <option>Програмування</option>
+                        <option>Мережі</option>
+                    </optgroup>
+
+                    <optgroup label="Музика">
+                        <option>Рок</option>
+                        <option>Поп</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Як ви дізналися про нас?</legend>
+                <div><input class="input-test" type="radio" value="Пошукові системи" name="Як ви дізналися про нас?">
+                    Пошукові системи</div>
+                <div><input type="radio" value="Соціальні мережі" name="Як ви дізналися про нас?"> Соціальні мережі
+                </div>
+                <input type="radio" value="Порада друзів/знайомих" name="Як ви дізналися про нас?"> Порада
+                друзів/знайомих
+            </fieldset>
+
+            <fieldset>
+                <legend>Опишіть свої враження/скарги пропозиції</legend>
+                <textarea name="враження"></textarea>
+            </fieldset>
+
+            <button type="submit">Надіслати форму</button>
+        </form>
+
+        <section>
+            <h2>Ось дивіться які в нас живуть тваринки.</h2>
+            <p>Наш Тузик:</p>
+            <img src="./assets/images/images (2).jpeg" alt="Dog">
+            <p>Наша Мурка:</p>
+            <img src="./assets/images/unnamed.jpg" alt="Cat">
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/">Instagram</a></li>
+                <li><a href="https://www.google.com/">Telegram</a></li>
+                <li><a href="https://www.google.com/">Tiktok</a></li>
+                <li><a href="https://www.google.com/">Facebook</a></li>
+                <li><a href="https://www.google.com/">Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
